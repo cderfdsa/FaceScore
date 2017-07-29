@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yyyclj.facescore.activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/img_photo"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_margin="20dp"
+        android:text="从相册选取"
+        />
+
+    <Button
+        android:id="@+id/btn_detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_toRightOf="@+id/btn_select"
+        android:layout_margin="20dp"
+        android:text="检测"
+        />
+
+</RelativeLayout>
